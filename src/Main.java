@@ -1,22 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        int balance = 100;
-        int payment = 2000;
+        int price_ticket = 1000;
+        int amount = 20;
+        int miles = price_ticket/amount;
 
-        int bonus;
-        int finalBalance;
+        System.out.println("Колличество начисленных миль:" + miles);
 
-        if (payment <= 1000) {
-            bonus = 0;
-            finalBalance = (balance + payment + bonus);
-
-        } else {
-            bonus = (payment / 100);
-            finalBalance = (balance + payment + bonus);
-        }
-
-
-        System.out.println("Количество бонусов: " + bonus);
-        System.out.println("Итоговый баланс: " + finalBalance);
     }
-} 
+}
